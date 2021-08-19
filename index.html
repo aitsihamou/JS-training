@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+  <title>JS - Jquery - CSS</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/Bootstrap.min.css">
+</head>
+
+<body>
+  <div class="container">
+    <nav class="navbar navbar-info bg-info justify-content-center">
+      <h1 class="navbar m-0 ">Compare Pictures Filtres</h1>
+    </nav>
+    <div class="pictures mt-2">
+      <ul class="list-unstyled d-flex justify-content-between">
+        <li class="clickable "> <img onclick="myFunctionimg(this)" src="./img/snow.jpg"></li>
+        <li class="clickable"> <img onclick="myFunctionimg(this)" src="./img/palais.jpg" ></li>
+        <li class="clickable active"> <img onclick="myFunctionimg(this)" src="./img/green.jpg"></li>
+        <li class="clickable"> <img onclick="myFunctionimg(this)" src="./img/teams.jpg"></li>
+      </ul>
+    </div>
+    
+    <div class="compare mt-1">
+      <div class="imgg back1">
+      </div>
+      <div class="imgg back2">
+      </div>
+      <input type="range" min="0" max="100" value="50" class="slider">
+      <div class='slider-button'>
+      </div>
+    </div>
+    <div class="filters mt-1">
+      <div class="d-flex justify-content-center">
+        <button type="button" class="btn btn-outline-info m-2" onclick="myFunctionfltr(this)" title="blur(5px)">BLUR</button>
+        <button type="button" class="btn btn-outline-dark m-2" onclick="myFunctionfltr(this)"title="grayscale(100%)">GRAYSCALE</button>
+        <button type="button" class="btn btn-outline-secondary m-2" onclick="myFunctionfltr(this)" title="brightness(30%)">BRIGHTNESS</button>
+      </div>
+    </div>
+  </div>
+  <script src="js/jquery.min.js"></script>
+  <script src="js/bootstrap.min.js"></script>
+  <script src="js/compare.js"></script>
+
+</body>
+
+</html>
